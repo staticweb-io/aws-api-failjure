@@ -11,10 +11,12 @@
   (->Failure message error))
 
 (defn invoke [client op-map]
-  (let [result (aws/invoke client op-map)
-        message (or (:message result)
-                  (:Message result)
-                  (:cognitect.anomalies/message result))]
+  (let [result (aws/invoke client op-map)]
     (if (:cognitect.anomalies/category result)
-      (fail message result)
+      (fail
+        (or (:message result)
+          (:Message result)
+          (:cognitect.anomalies/message result)
+          (-> result :ErrorResponse :Error :Message))
+        result)
       result)))
