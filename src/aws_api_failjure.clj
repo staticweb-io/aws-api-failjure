@@ -17,6 +17,7 @@
         (or (:message result)
           (:Message result)
           (:cognitect.anomalies/message result)
-          (-> result :ErrorResponse :Error :Message))
+          (-> result :ErrorResponse :Error :Message)
+          (-> result :Response :Errors :Error :Message))
         result)
       result)))
