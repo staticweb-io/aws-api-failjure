@@ -1,1 +1,2 @@
-{:deps {failjure/failjure {:mvn/version "2.2.0"}}}
+{:deps {com.cognitect.aws/api {:mvn/version "0.8.505"}
+        failjure/failjure {:mvn/version "2.2.0"}}}
