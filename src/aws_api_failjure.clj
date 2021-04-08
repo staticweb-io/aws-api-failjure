@@ -22,3 +22,12 @@
     (if (:cognitect.anomalies/category result)
       (fail (message result) result)
       result)))
+
+(defn throwing-invoke [client op-map]
+  (let [result (aws/invoke client op-map)]
+    (if-not (:cognitect.anomalies/category result)
+      result
+      (throw
+        (ex-info
+          (str "Anomaly during invoke: " (message result))
+          {:client client :op-map op-map :result result})))))
