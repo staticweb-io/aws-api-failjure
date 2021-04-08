@@ -18,7 +18,7 @@ Or add to project.clj:
 
 ## Usage
 
-Create clients as you normally would using aws-api. This example requires you to have a `com.cognitect.aws/s3` dependency, you can replace `{:api :s3}` with any other API that you have the dependency for.
+Create clients as you normally would using aws-api. This example requires you to have a `com.cognitect.aws/s3` dependency, but you can replace `{:api :s3}` with any other API that you have the dependency for.
 
 ```clojure
 (require '[aws-api-failjure :as aaf]
