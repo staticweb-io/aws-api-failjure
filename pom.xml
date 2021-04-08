@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+  <modelVersion>4.0.0</modelVersion>
+    
+  <groupId>io.staticweb</groupId>
+    
+  <artifactId>aws-api-failjure</artifactId>
+    
+  <version>1.0.0</version>
+    
+  <name>aws-api-failjure</name>
+    
+  <description>A library for dealing with anomalies when using Cognitect's aws-api.</description>
+    
+  <dependencies>
+        
+    <dependency>
+            
+      <groupId>com.cognitect.aws</groupId>
+            
+      <artifactId>api</artifactId>
+            
+      <version>0.8.505</version>
+          
+    </dependency>
+        
+    <dependency>
+            
+      <groupId>failjure</groupId>
+            
+      <artifactId>failjure</artifactId>
+            
+      <version>2.2.0</version>
+          
+    </dependency>
+      
+  </dependencies>
+    
+  <repositories/>
+  
+  <scm>
+    <url>https://github.com/staticweb-io/aws-api-failjure</url>
+    <tag>d4361e3d6f27fafeb15c29efe839b04927a33746</tag>
+    <connection>scm:git:git@github.com:staticweb-io/aws-api-failjure.git</connection>
+    <developerConnection>scm:git:git@github.com:staticweb-io/aws-api-failjure.git</developerConnection>
+  </scm>
+</project>

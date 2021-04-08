@@ -1,2 +1,6 @@
 {:deps {com.cognitect.aws/api {:mvn/version "0.8.505"}
-        failjure/failjure {:mvn/version "2.2.0"}}}
+        failjure/failjure {:mvn/version "2.2.0"}}
+ :aliases {:release
+           {:extra-deps
+            {applied-science/deps-library {:mvn/version "0.4.0"}}
+            :main-opts ["-m" "applied-science.deps-library"]}}}
