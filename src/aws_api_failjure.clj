@@ -27,7 +27,8 @@
   (let [result (aws/invoke client op-map)]
     (if-not (:cognitect.anomalies/category result)
       result
-      (throw
-        (ex-info
-          (str "Anomaly during invoke: " (message result))
-          {:client client :op-map op-map :result result})))))
+      (let [msg (message result)]
+        (throw
+          (ex-info
+            (str "Anomaly during invoke: " msg)
+            {:client client :message msg :op-map op-map :result result}))))))
