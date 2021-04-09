@@ -8,12 +8,12 @@ A library for dealing with anomalies when using [aws-api](https://github.com/cog
 
 Add to deps.edn:
 ```edn
-io.staticweb/aws-api-failjure {:mvn/version "1.0.0"}
+io.staticweb/aws-api-failjure {:mvn/version "1.1.0"}
 ```
 
 Or add to project.clj:
 ```edn
-[io.staticweb/aws-api-failjure "1.0.0"]
+[io.staticweb/aws-api-failjure "1.1.0"]
 ```
 
 ## Usage
